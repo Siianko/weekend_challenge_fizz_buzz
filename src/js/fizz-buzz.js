@@ -1,6 +1,6 @@
 function FizzBuzz() {
    const hasZeroRemainder = (number, divider) => {
-       return (number % divider) === 0
+       return (number % divider) === 0;
    }
    
     this.check = (number) => {

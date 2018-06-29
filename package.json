@@ -10,8 +10,7 @@
       "server": "superstatic src -p 3000",
       "stop-test-server": "lsof -ti tcp:$PORT | xargs kill"
     },
-
-
+    
 "author": "",
   "License": "ISC",
   "devDependencies": {
