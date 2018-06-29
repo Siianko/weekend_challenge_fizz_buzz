@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fizz Buzz</title>
+</head>
+<h1>Welcome to Fizz Buzz Challenge!</h1>
+<link rel="stylesheet" type"text/css" href="src/index.css">
+<hr>
+<br>
+<br>
+<br>
+<body>
+    <div class="block">
+    </div>
+    <input type="text" id="valu">
+    <input type="submit" value="Check" id="button">
+    <div id="display_answer"></div>
+    
+</body>
+<script src="src/js/fizz-buzz.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    let button = document.getElementById('button')
+    let displayDiv = document.getElementById('display_answer')
+    button.addEventListener('click', () => {
+        let value = document.getElementById('value').value
+        let fizzBuzz = new FizzBuzz
+        let result = fizzBuzz.check(value)
+        displayDiv.innerHTML = result;
+    })
+
+    })
+</script>
+</html>
