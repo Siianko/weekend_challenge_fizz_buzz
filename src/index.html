@@ -7,12 +7,14 @@
     <title>Fizz Buzz</title>
 </head>
 <h1>Welcome to Fizz Buzz Challenge!</h1>
-<link rel="stylesheet" type"text/css" href="src/index.css">
+<link rel="stylesheet" type"text/css" href="index.css">
 <hr>
 <br>
 <br>
 <br>
 <body>
+    <img src="f_numbers.jpg" alt="numbers" id="numbers" onClick="change();">
+
     <div class="block">
     </div>
     <input type="text" id="value">
@@ -30,8 +32,17 @@
         let fizzBuzz = new FizzBuzz
         let result = fizzBuzz.check(value)
         displayDiv.innerHTML = result;
-    })
+        })
+    
+        //here is the code I am struggling with. //
+        //I want image called f_numbers to be changed to image2 when user inputs the data// 
 
-    })
+        button.addEventListener('click', () => {
+        let image2 = "ein.jpeg";
+        let image = document.getElementById('numbers');        
+        function change().to.image2;
+        }
+
+    }) 
 </script>
 </html>
